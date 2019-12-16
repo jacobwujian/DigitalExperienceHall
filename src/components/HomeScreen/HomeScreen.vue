@@ -1,13 +1,21 @@
 <template>
   <div class="bgColor" :style="'height:'+fullHeight+'px;'">
-    <div class="heart"></div>
-    <div class="heart HeartClass"></div>
-    <div class="heart HeartClass2"></div>
-    <div class="heart HeartClass3"></div>
+    <div class="wai1">
+      <div class="heart"></div>
     <div class="Leader" @click="goPage('Leader')"><span>{{'高层领导'}}</span></div>
-    <div class="Mid" @click="goPage('Mid')"><span>{{'中层干部'}}</span></div>
-    <div class="HRPs" @click="goPage('HRPs')"><span>{{'HR人员 '}}</span></div>
-    <div class="Normal" @click="goPage('Normal')"><span>{{'普通员工'}}</span></div>
+    </div>
+    <div class="wai2">
+      <div class="heart HeartClass"></div>
+      <div class="Mid" @click="goPage('Mid')"><span>{{'中层干部'}}</span></div>
+    </div>
+    <div class="wai3">
+      <div class="heart HeartClass2"></div>
+      <div class="HRPs" @click="goPage('HRPs')"><span>{{'HR人员 '}}</span></div>
+    </div>
+    <div class="wai4">
+      <div class="heart HeartClass3"></div>
+      <div class="Normal" @click="goPage('Normal')"><span>{{'普通员工'}}</span></div>
+    </div>
   </div>
 </template>
 <script>
@@ -154,17 +162,43 @@ export default{
     background-size: 100% 100%;
     background-attachment:fixed;
   }
+  .wai1{
+    width: 20vh;
+    height: 20vh;
+    position: absolute;
+    top: 18%;
+    left: 15%;
+  }
+  .wai2{
+    width: 20vh;
+    height: 20vh;
+    position: absolute;
+    left: 35%;
+    top: 3%;
+  }
+  .wai3{
+    width: 20vh;
+    height: 20vh;
+    position: absolute;
+    left: 55%;
+    top: 3%;
+  }
+  .wai4{
+    width: 20vh;
+    height: 20vh;
+    position: absolute;
+    left: 75%;
+    top: 18%;
+  }
   .heart {
     animation: beat 4s infinite;
     -webkit-animation: beat 4s infinite;
-    width: 200px;
-    height: 200px;
+    width: 20vh;
+    height: 20vh;
     filter:drop-shadow(0px 0px 20px rgb(255,20,20));
     background: url(../../assets/Title.png) no-repeat;
-    background-size: 200px;
+    background-size: 20vh;
     position: relative;
-    top: 150px;
-    left: 300px;
     transform: rotate(45deg);
     z-index: 99999;
   }
@@ -172,7 +206,7 @@ export default{
     left: -20px;
   }
   .heart::after {
-    left: 0px;
+    left: 0;
     top: -20px;
   }
   @keyframes beat {
@@ -193,27 +227,14 @@ export default{
       opacity: 1;
     }
   }
-  .HeartClass{
-    margin-left: 20%;
-    margin-top: -20%;
-    position: relative;
-  }
-  .HeartClass2{
-    margin-left: 40%;
-    margin-top: -7%;
-    position: relative;
-  }
-  .HeartClass3{
-    margin-left: 60%;
-    position: relative;
-  }
   .Leader{
-    height: 20px;
-    width: 150px;
-    position: absolute;
-    top: 36%;
-    left: 18%;
-    font-size: 30px;
+    position: relative;
+    margin: auto;
+    bottom: 11.5vh;
+    left: 0;
+    height: 3vh;
+    width: 12vh;
+    font-size: 3vh;
     color: white;
     z-index: 99999;
   }
@@ -221,12 +242,13 @@ export default{
     cursor: pointer;
   }
   .Mid{
-    height: 20px;
-    width: 150px;
-    position: absolute;
-    top: 17.5%;
-    left:37%;
-    font-size: 30px;
+    position: relative;
+    margin: auto;
+    bottom: 11.5vh;
+    left: 0;
+    height: 3vh;
+    width: 12vh;
+    font-size: 3vh;
     color: white;
     z-index: 99999;
   }
@@ -234,12 +256,13 @@ export default{
     cursor: pointer;
   }
   .HRPs{
-    height: 20px;
-    width: 150px;
-    position: absolute;
-    top: 25%;
-    left: 57%;
-    font-size: 30px;
+    position: relative;
+    margin: auto;
+    bottom: 11.5vh;
+    left: 0;
+    height: 3vh;
+    width: 12vh;
+    font-size: 3vh;
     color: white;
     z-index: 99999;
   }
@@ -247,12 +270,13 @@ export default{
     cursor: pointer;
   }
   .Normal{
-    height: 20px;
-    width: 150px;
-    position: absolute;
-    top: 46%;
-    left: 77%;
-    font-size: 30px;
+    position: relative;
+    margin: auto;
+    bottom: 11.5vh;
+    left: 0;
+    height: 3vh;
+    width: 12vh;
+    font-size: 3vh;
     color: white;
     z-index: 99999;
   }

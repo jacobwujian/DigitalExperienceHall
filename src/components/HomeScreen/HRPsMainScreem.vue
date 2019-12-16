@@ -1,84 +1,67 @@
 <template>
-<div class="bgColor" :style="'height:'+fullHeight+'px;'">
- <div id="monthData1" :style="{width: '40px', height: '40px'}"></div>
-  <div class="monthData" style="position: absolute;z-index: 99999; left: 52.3%;top: 22%; color: red">
-     <div style="position: absolute; left: 95px; top: 8px;width: 80px;height: 80px;">
-        <el-button size="medium" @click="goPage('HRPsMain01')" :style="{color: button1}">组织管理</el-button>
+  <div class="bgColor" :style="'height:'+fullHeight+'px;'">
+    <div id="monthData1" :style="{width: '40px', height: '40px'}"></div>
+    <div  style="position: absolute;z-index: 99999; left: 52.3%;top: 22.5%;">
+      <div style="position: absolute; left: 65px; top: 2px;width: 132px;height: 43px;">
+        <el-button size="medium" @click="goPage('HRPsMain01')" style="color:white;font-size: 4vh">组织管理</el-button>
       </div>
-  </div>
- <div id="monthData2" :style="{width: '50px', height: '50px'}"></div>
-  <div class="monthData" style="position: absolute;z-index: 99999; left: 62.5%;top: 29%; color: red">
-     <div style="position: absolute; left: 98px; top: 8px;width: 100px;height: 90px;">
-        <el-button size="medium" @click="goPage('HRPsMain02')" :style="{color: button2}">员工管理</el-button>
+    </div>
+    <div  style="position: absolute;z-index: 99999; left: 62.5%;top: 29%; ">
+      <div style="position: absolute; left: 69px; top: 2px;width: 132px;height: 43px;">
+        <el-button size="medium" @click="gopage('HRPsMain02')"  style="color:white;font-size: 4vh">员工管理</el-button>
       </div>
-  </div>
- <div id="monthData3" :style="{width: '50px', height: '50px'}"></div>
-  <div class="monthData" style="position: absolute;z-index: 99999; left: 67.5%;top: 45%; color: red">
-     <div style="position: absolute; left: 95px; top: 8px;width: 100px;height: 90px;">
-        <el-button size="medium" @click="goPage('HRPsMain03')" :style="{color: button3}">薪资管理</el-button>
+    </div>
+    <div  style="position: absolute;z-index: 99999; left: 67.5%;top: 45%; ">
+      <div style="position: absolute; left: 66px; top: 2px;width: 132px;height: 43px;">
+        <el-button size="medium" @click="gopage('HRPsMain03')"  style="color:white;font-size: 4vh">薪资管理</el-button>
       </div>
-  </div>
-  <div id="monthData4" :style="{width: '50px', height: '50px'}"></div>
-  <div class="monthData" style="position: absolute;z-index: 99999; left: 67.5%;top: 65%; color: red">
-    <div style="position: absolute; left: 95px; top: 8px;width: 100px;height: 90px;">
-      <el-button size="medium" @click="goPage('HRPsMain04')" :style="{color: button4}">社保福利</el-button>
+    </div>
+    <div  style="position: absolute;z-index: 99999; left: 67.5%;top: 65%; ">
+      <div style="position: absolute; left: 65px; top: 2px;width: 132px;height: 43px;">
+        <el-button size="medium" @click="gopage('HRPsMain04')"  style="color:white;font-size: 4vh">社保福利</el-button>
+      </div>
+    </div>
+    <div  style="position: absolute;z-index: 99999; left: 62.3%;top: 79.5%; ">
+      <div style="position: absolute; left: 60px; top: 7px;width: 132px;height: 43px;">
+        <el-button size="medium" @click="gopage('HRPsMain05')"  style="color:white;font-size: 4vh">假勤管理</el-button>
+      </div>
+    </div>
+    <div  style="position: absolute;z-index: 99999; left: 51.7%;top: 87%; ">
+      <div style="position: absolute; left: 65px; top: 2px;width: 132px;height: 43px;">
+        <el-button size="medium" @click="gopage('HRPsMain06')"  style="color:white;font-size: 4vh">共享服务</el-button>
+      </div>
+    </div>
+    <div  style="position: absolute;z-index: 99999; left: 32.5%;top: 22%; ">
+      <div style="position: absolute; left: 63px; top: 2px;width: 132px;height: 43px;">
+        <el-button size="medium" @click="gopage('HRPsMain07')"  style="color:white;font-size: 4vh">目标绩效</el-button>
+      </div>
+    </div>
+    <div  style="position: absolute;z-index: 99999; left: 22%;top: 29%; ">
+      <div style="position: absolute; left: 64px; top: 2px;width: 132px;height: 43px;">
+        <el-button size="medium" @click="gopage('HRPsMain08')"  style="color:white;font-size: 4vh">人才发展</el-button>
+      </div>
+    </div>
+    <div  style="position: absolute;z-index: 99999; left: 15.5%;top: 45%; ">
+      <div style="position: absolute; left: 70px; top: 2px;width: 132px;height: 43px;">
+        <el-button size="medium" @click="gopage('HRPsMain09')"  style="color:white;font-size: 4vh">组织发展</el-button>
+      </div>
+    </div>
+    <div  style="position: absolute;z-index: 99999; left: 15%;top: 64.5%; ">
+      <div style="position: absolute; left: 70px; top: 2px;width: 132px;height: 43px;">
+        <el-button size="medium" @click="gopage('HRPsMain10')"  style="color:white;font-size: 4vh">培训学习</el-button>
+      </div>
+    </div>
+    <div  style="position: absolute;z-index: 99999; left: 22%;top: 81%; ">
+      <div style="position: absolute; left: 60px; top: 2px;width: 132px;height: 43px;">
+        <el-button size="medium" @click="gopage('HRPsMain11')"  style="color:white;font-size: 4vh">招聘管理</el-button>
+      </div>
+    </div>
+    <div  style="position: absolute;z-index: 99999; left: 32%;top: 87%; ">
+      <div style="position: absolute; left: 70px; top: 2px;width: 132px;height: 43px;">
+        <el-button size="medium" @click="gopage('HRPsMain12')"  style="color:white;font-size: 4vh">企业文化</el-button>
+      </div>
     </div>
   </div>
-  <div id="monthData5" :style="{width: '50px', height: '50px'}"></div>
-  <div class="monthData" style="position: absolute;z-index: 99999; left: 62.3%;top: 79.5%; color: red">
-    <div style="position: absolute; left: 90px; top: 8px;width: 100px;height: 90px;">
-      <el-button size="medium" @click="goPage('HRPsMain05')" :style="{color: button5}">假勤管理</el-button>
-    </div>
-  </div>
-  <div id="monthData6" :style="{width: '50px', height: '50px'}"></div>
-  <div class="monthData" style="position: absolute;z-index: 99999; left: 51.7%;top: 87%; color: red">
-    <div style="position: absolute; left: 90px; top: 8px;width: 100px;height: 90px;">
-      <el-button size="medium" @click="goPage('HRPsMain06')" :style="{color: button6}">共享服务</el-button>
-    </div>
-  </div>
-  <div id="monthData7" :style="{width: '50px', height: '50px'}"></div>
-  <div class="monthData" style="position: absolute;z-index: 99999; left: 32.5%;top: 22%; color: red">
-    <div style="position: absolute; left: 90px; top: 8px;width: 100px;height: 90px;">
-      <el-button size="medium" @click="goPage('HRPsMain07')" :style="{color: button7}">目标绩效</el-button>
-    </div>
-  </div>
-  <div id="monthData8" :style="{width: '50px', height: '50px'}"></div>
-  <div class="monthData" style="position: absolute;z-index: 99999; left: 22%;top: 29%; color: red">
-    <div style="position: absolute; left: 90px; top: 8px;width: 100px;height: 90px;">
-      <el-button size="medium" @click="goPage('HRPsMain08')" :style="{color: button8}">人才发展</el-button>
-    </div>
-  </div>
-  <div id="monthData9" :style="{width: '50px', height: '50px'}"></div>
-  <div class="monthData" style="position: absolute;z-index: 99999; left: 15.5%;top: 45%; color: red">
-    <div style="position: absolute; left: 90px; top: 8px;width: 100px;height: 90px;">
-      <el-button size="medium" @click="goPage('HRPsMain09')" :style="{color: button9}">组织发展</el-button>
-    </div>
-  </div>
-  <div id="monthData10" :style="{width: '50px', height: '50px'}"></div>
-  <div class="monthData" style="position: absolute;z-index: 99999; left: 15.5%;top: 64.5%; color: red">
-    <div style="position: absolute; left: 90px; top: 8px;width: 100px;height: 90px;">
-      <el-button size="medium" @click="goPage('HRPsMain10')" :style="{color: button10}">培训学习</el-button>
-    </div>
-  </div>
-  <div id="monthData11" :style="{width: '50px', height: '50px'}"></div>
-  <div class="monthData" style="position: absolute;z-index: 99999; left: 22%;top: 81%; color: red">
-    <div style="position: absolute; left: 90px; top: 8px;width: 100px;height: 90px;">
-      <el-button size="medium" @click="goPage('HRPsMain11')" :style="{color: button11}">招聘管理</el-button>
-    </div>
-  </div>
-  <div id="monthData12" :style="{width: '50px', height: '50px'}"></div>
-  <div class="monthData" style="position: absolute;z-index: 99999; left: 32%;top: 87%; color: red">
-    <div style="position: absolute; left: 90px; top: 8px;width: 100px;height: 90px;">
-      <el-button size="medium" @click="goPage('HRPsMain12')" :style="{color: button12}">企业文化</el-button>
-    </div>
-  </div>
-  <div id="backTo" :style="{width: '105px', height: '105px'}"></div>
-  <div class="backTo" style="position: absolute;z-index: 99999; right: 0%;bottom: 0%; color: red">
-    <div style="position: absolute; right: 120px; bottom: 80px;width: 10px;height: 10px;">
-      <img :src="imgsrcBack" @click="goPage('')" width="80px" height="80px">
-    </div>
-  </div>
-</div>
 </template>
 
 <script>
@@ -86,18 +69,6 @@ export default {
   name: 'Mid',
   data () {
     return {
-      button1: 'white',
-      button2: 'white',
-      button3: 'white',
-      button4: 'white',
-      button5: 'white',
-      button6: 'white',
-      button7: 'white',
-      button8: 'white',
-      button9: 'white',
-      button10: 'white',
-      button11: 'white',
-      button12: 'white',
       imgsrcLeft: require('../../assets/toleft.png'),
       imgsrcRight: require('../../assets/toright.png'),
       imgsrcBack: require('../../assets/back.png'),
